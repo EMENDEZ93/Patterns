@@ -1,12 +1,17 @@
 package Inter.impl;
 
-public class ConexionVacia {
+import Inter.IConexion;
 
-	private String host;
-	private String port;
-	private String user;
-	private String password;
-	
-	
+public class ConexionVacia implements IConexion {
+
+	@Override
+	public void conectar() {
+		System.out.println("NO SE ESPECIFICÓ PROVEEDOR");		
+	}
+
+	@Override
+	public void desconectar() {
+		System.out.println("NO SE ESPECIFICÓ PROVEEDOR");		
+	}
 	
 }
